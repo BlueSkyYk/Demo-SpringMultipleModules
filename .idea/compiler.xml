@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="SpringDemo.Common.main" target="1.8" />
+      <module name="SpringDemo.Common.test" target="1.8" />
+      <module name="SpringDemo.Data.main" target="1.8" />
+      <module name="SpringDemo.Data.test" target="1.8" />
+      <module name="SpringDemo.Service.main" target="1.8" />
+      <module name="SpringDemo.Service.test" target="1.8" />
+      <module name="SpringDemo.View.main" target="1.8" />
+      <module name="SpringDemo.View.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

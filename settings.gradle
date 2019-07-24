@@ -1,0 +1,5 @@
+rootProject.name = 'SpringDemo'
+include 'demo-common'
+include 'demo-data'
+include 'demo-service'
+include 'demo-view'
