@@ -1,6 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.1.6.RELEASE'
     id 'java'
+    id 'idea'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -13,6 +14,9 @@ configurations {
     developmentOnly
     runtimeClasspath {
         extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
     }
 }
 

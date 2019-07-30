@@ -1,6 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.1.6.RELEASE'
     id 'java'
+    id 'idea'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -14,6 +15,9 @@ configurations {
     runtimeClasspath {
         extendsFrom developmentOnly
     }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
 }
 
 repositories {
@@ -26,4 +30,5 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'mysql:mysql-connector-java'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile project(':demo-service')
 }

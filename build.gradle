@@ -1,5 +1,15 @@
+buildscript {
+    allprojects {
+        gradle.projectsEvaluated {
+            allprojects {
+                jar { enabled = true }
+            }
+        }
+    }
+}
 plugins {
     id 'java'
+    id 'idea'
 }
 
 group 'com.test'
